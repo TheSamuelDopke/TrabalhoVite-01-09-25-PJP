@@ -1,0 +1,118 @@
+/* =======================
+   Cores base e temas
+========================== */
+
+:root {
+  --background: #ffffff;
+  --foreground: #374151;
+  --card: #fefce8;
+  --card-foreground: #374151;
+  --popover: #ffffff;
+  --popover-foreground: #374151;
+  --primary: #d97706;
+  --primary-foreground: #ffffff;
+  --secondary: #f97316;
+  --secondary-foreground: #ffffff;
+  --muted: #fefce8;
+  --muted-foreground: #374151;
+  --accent: #f97316;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #f9fafb;
+  --ring: rgba(217, 119, 6, 0.5);
+  --chart-1: #d97706;
+  --chart-2: #f97316;
+  --chart-3: #f59e0b;
+  --chart-4: #dc2626;
+  --chart-5: #ea580c;
+  --radius: 0.5rem;
+  --sidebar: #fefce8;
+  --sidebar-foreground: #374151;
+  --sidebar-primary: #d97706;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f97316;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: rgba(217, 119, 6, 0.5);
+}
+
+.dark {
+  --background: #1f2937;
+  --foreground: #f9fafb;
+  --card: #374151;
+  --card-foreground: #f9fafb;
+  --popover: #1f2937;
+  --popover-foreground: #f9fafb;
+  --primary: #f97316;
+  --primary-foreground: #1f2937;
+  --secondary: #d97706;
+  --secondary-foreground: #f9fafb;
+  --muted: #374151;
+  --muted-foreground: #9ca3af;
+  --accent: #f97316;
+  --accent-foreground: #1f2937;
+  --destructive: #dc2626;
+  --destructive-foreground: #f9fafb;
+  --border: #4b5563;
+  --input: #374151;
+  --ring: rgba(249, 115, 22, 0.5);
+  --sidebar: #374151;
+  --sidebar-foreground: #f9fafb;
+  --sidebar-primary: #f97316;
+  --sidebar-primary-foreground: #1f2937;
+  --sidebar-accent: #d97706;
+  --sidebar-accent-foreground: #f9fafb;
+  --sidebar-border: #4b5563;
+  --sidebar-ring: rgba(249, 115, 22, 0.5);
+}
+
+/* =======================
+   Tipografia e fontes
+========================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans, sans-serif);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+* {
+  box-sizing: border-box;
+  border-color: var(--border);
+  outline-color: var(--ring);
+}
+
+/* =======================
+   Animações personalizadas
+========================== */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(249, 115, 22, 0.6);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
